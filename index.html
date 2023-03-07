@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assests/style.css"/>
+    <script src="assests/main.js"></script>
+    <title>BOOK LANDING PAGE</title>
+</head>
+<body>
+    <!-- header section i is for icons and have name conventions -->
+    <header class="header">
+        <h2 class="header_title">
+            <span>Matt Ridley</span>
+            <i class=" fa fa-paper-plane plane-icon "></i>
+            </h2>
+            <!-- navbar -->
+            <nav id="header_nav" class="header_nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Books</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact Us</a>
+            </nav>
+            <i onclick="ToggleMenu('block')" class="fa fa-bars menu_icon"></i>
+            <i onclick="ToggleMenu('none')" id="close_icon" class="fa fa-times-circle close_icon"></i>
+        
+    </header>
+
+    <!-- book icons and content  aside to help on left and main to help on right-->
+    <div class="wrapper">
+        <aside>
+            <div class="book">
+                <div class="book_circle">
+                    <img src="assests/images/book.png" alt="book" />
+                </div>
+            </div>
+        </aside>
+    <main>
+        <h1>Innovation happens
+            when people are 
+            free to think,speculate
+            and experiment</h1>
+            <p>Ridley's new book, How Innovation Works, chronicles the history of innovation and argues that we need to change the way we think about innovation, to see it as an incremental, bottom-up, fortuitous process that happens to society as a direct result of the human habit of exchange.</p>
+            <div class="buttons">
+                <button class="buttons_buynow">BUY NOW</button>
+                <button class="buttons_readmore">Read More</button>
+            </div>
+    </main>
+
+</body>
+</html>

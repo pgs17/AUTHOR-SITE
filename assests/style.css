@@ -1,0 +1,212 @@
+/* global styles inside root  */
+/* --variable-name:   */
+/* body is used to acess totasl page  */
+:root{
+    --primary-color: #013456;
+    --accent-color: #FAD405;
+}
+@font-face{
+    font-family: 'Istok-Web';
+   src: url(fonts/IstokWeb-Bold.ttf);
+   font-weight: 700;
+}
+@font-face{
+    font-family: 'Istok-Web';
+   src: url(fonts/IstokWeb-Regular.ttf)
+} 
+@font-face{
+    font-family: 'Poppins';
+   src: url(fonts/Poppins-Bold.ttf);
+   font-weight: 700;
+
+}@font-face{
+    font-family: 'Poppins';
+   src: url(fonts/Poppins-Light.ttf);
+   font-weight: 200;
+}
+body {
+    background-color: rgb(144, 115, 120);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 81px;
+    max-width: 1231px;
+    margin: 0 auto;
+    font-family: 'Istok Web';
+}
+.header_title{
+margin: 0px;
+display: flex;
+align-items: center;
+}
+.header span{
+    font-weight: 700px;
+    font-size: 40px;
+    margin-right: 10px;
+    font-style: normal;
+    color: var(--primary-color);
+}
+.header .plane-icon{
+    color: var(--accent-color);
+}
+.header .menu_icon,.header .close_icon{
+    display: none;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+.header_nav a{
+    text-decoration: none;
+    margin-left: 29px;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+.wrapper{
+display: flex;
+}
+.wrapper aside{
+    width: 50%;
+    margin-top: 46px;
+    position: relative;
+}
+.book_circle{
+    width: 782px;
+    height: 782px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book{
+    height: 782px;
+    margin-bottom: 55px;
+}
+.wrapper main{
+    width: 50%;
+    margin-top: 91px;
+    max-width: 556px;
+}
+.wrapper main h1{
+    color: var(--primary-color);
+    font-weight: 700px;
+    font-size: 48px;
+    font-family: 'Poppins';
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.wrapper main p{
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 200px;
+    margin-bottom: 50px;
+    color: black;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.buttons button{
+    border-radius: 50px;
+    border: none;
+    padding: 16px 47px;
+}
+.buttons_buynow{
+    background-color: var(--accent-color);
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: 700px;
+    color: var(--primary-color);
+}
+.buttons_readmore{
+    background-color: var(--primary-color);
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 700px;
+    color: aliceblue;
+}
+/* responsive  */
+@media  screen and (max-width:1400px) {
+    .header{
+        width: 90%;
+    padding-top: 20px;
+    }
+    .header_nav{
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+    }
+    .header_nav a{
+        color: var(--accent-color);
+        display: block;
+        text-align:  center;
+        margin: 20px 0px;
+    }
+    .header .menu_icon{
+        display: block;
+        font-size: 30px;
+        color: var(--primary-color);
+        line-height: 45px;
+        cursor: pointer;
+    }
+    .header .close_icon{
+        display: none;
+        z-index: 1;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--accent-color);
+        cursor: pointer;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper main,.wrapper aside{
+        width: 90%;
+        max-width: 100%;
+        margin: 20px;
+    }
+    .book_circle img{
+        max-width: 150px;
+    }
+    .book_circle{
+        position: initial;
+        max-width: 300px;
+        max-height: 300px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .book{
+        height: 300px;
+        margin-bottom: 0px;
+    }
+    main h1{
+        font-size: 24px;
+    }
+    main p{
+        font-size: 14px;
+    }
+    .buttons_buynow{
+        font-size: 16px;
+    }
+    .buttons_readmore{
+        font-size: 16px;
+    }
+    .buttons button{
+        padding: 16px 25px;
+    }
+
+}
